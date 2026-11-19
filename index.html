@@ -3,11 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
   <title>Frontend Mentor | Product preview card component</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
 
 </head>
 <body>
@@ -15,23 +20,30 @@
     <article class="product-card">
       <picture>
           <source media="(min-width: 768px)" srcset="./images/image-product-desktop.jpg">
-          <img src="./images/image-product-mobile.jpg" alt="perfume" class="product-img">
+          <img src="./images/image-product-mobile.jpg" alt="Gabrielle Essence Eau De Parfum bottle by Chanel" class="product-img">
       </picture>
-      <h4 class="product-name">
-        Perfume
-      </h4>
-      <h2 class="product-title">
-        Gabrielle Essence Eau De Parfum
-      </h2>
+      <section class="product-content">
+        <span class="product-name">
+          Perfume
+        </span>
+        <h1 class="product-title">
+          Gabrielle Essence Eau De Parfum
+        </h1>
 
-      <p class="product-text">
-        A floral, solar and voluptuous interpretation composed by Olivier Polge,
-        Perfumer-Creator for the House of CHANEL.
-      </p>
-      <span class="product-price">$149.99</span>
-      <span class="product-discount">$169.99</span>
+        <p class="product-text">
+          A floral, solar and voluptuous interpretation composed by Olivier Polge,
+          Perfumer-Creator for the House of CHANEL.
+        </p>
 
-      <button type="button" class="product-btn">Add to Cart</button>
+        <div class="product-price">
+          <span class="product-price-current">$149.99</span>
+          <del class="product-discount">$169.99</del>
+        </div>
+
+        <button type="button" class="product-btn">
+          <img src="./images/icon-cart.svg" alt=""> Add to Cart
+        </button>
+      </section>
     </article>
   </main>
 </body>
